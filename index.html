@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <div class="logo">
+        <a href=""><img src="bank a.png" alt=""></a>
+    </div>        
+        <ul>
+            <li class="bank">БАНК</li>
+            <li> БИЗНЕС</li>
+            <li> ИНВЕСТИЦИ</li>
+            <li>СТРАХОВАНИЕ</li>
+            <li>МОБАЙЛ</li>
+            <li> ПУТЕШЕСТВИЯ</li>
+            <li>РАЗВЛЕЧЕНИЯ</li>
+        </ul>
+        <button class="button-header">ВОЙТИ</button>
+    </header>
+    <section>
+        <h1 class="text1">Конвертер валют онлайн</h1>
+        <div class="container3">
+            <div class="box4">
+                <p class="text3">У меня есть </p>
+                <table class="table1" border="1px">
+                    <tr>
+                        <td class="td1">RUB</td>
+                        <td class="td2">USD</td>
+                        <td class="td3">EUR</td>
+                        <td class="td4">GBP</td>
+                    </tr>
+                </table>
+                <form>
+                    <input class="input1" type="text"
+                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');">
+                </form>
+                <p class="text5"></p>
+            </div>
+            <div class="container5">
+                <p class="text4">Хочу приобрести</p>
+                <table class="table2" border="1px">
+                    <tr>
+                        <td class="td11">RUB</td>
+                        <td class="td21">USD</td>
+                        <td class="td31">EUR</td>
+                        <td class="td41">GBP</td>
+                    </tr>
+                </table>
+                <form>
+                    <input class="input2" type="text"
+                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');">
+                </form>
+                <p class="text6"></p>
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+
+</html>
